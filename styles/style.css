@@ -1,92 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_dark {
-  --decor-text-color: #000028;
-  --accent-color: #d800ff;
-  --title-accent: #ff0070;
-  --accent-color-shadow: #ff0070;
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --neon-decorate: #ff0070;
-  --background-image: url(images/cover-image-dark.png);
-  --button-text-color: #ff0070;
-  --neon-border: #ff0070;
-}
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  position: relative;
-}
-
-.body::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-picture {
-  margin: 0;
-  padding: 0;
-}
-
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_light {
-  --decor-text-color: #000;
-  --background-color: #fff1f7;
-  --accent-color: #ffc2e6;
-  --title-accent: #ff8dcb;
-  --accent-color-shadow: #ff0070;
-  --text-color: #000;
-  --background-image: url(images/cover-image-light.png);
-  --button-text-color: #353430;
-  --neon-decorate: transparent;
-  --neon-border: #000;
-}
 /* stylelint-disable no-duplicate-selectors */
-
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
@@ -154,6 +66,12 @@ a {
   color: var(--button-text-color);
   padding-inline: 12px;
   padding-block: 3px;
+}
+
+.header__theme-menu-button:hover{
+  outline: 1px solid  var(--button-text-color);
+  opacity: 0.7;
+
 }
 
 .header__theme-menu-button_active {
@@ -327,18 +245,12 @@ a {
   border-bottom: 1px solid var(--button-text-color);
 }
 
-.header__theme-menu-button:hover{
-  outline: 1px solid  var(--button-text-color);
-  opacity: 0.7;
-
-}
-
 .text-link:focus-visible {
   outline: 1px solid var(--text-color);
 }
 
 @media (prefers-color-scheme: dark) {
-  
+
   .page {
     --decor-text-color: #000028;
     --accent-color: #d800ff;
@@ -347,14 +259,14 @@ a {
     --background-color: #000028;
     --text-color: #f1b2ce;
     --neon-decorate: #ff0070;
-    --background-image: url(images/cover-image-dark.png);
+    --background-image: url(../images/cover-image-dark.png);
     --button-text-color: #ff0070;
     --neon-border: #ff0070;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  
+
   .page {
     --decor-text-color: #000;
     --background-color: #fff1f7;
@@ -362,7 +274,7 @@ a {
     --title-accent: #ff8dcb;
     --accent-color-shadow: #ff0070;
     --text-color: #000;
-    --background-image: url(images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
     --button-text-color: #353430;
     --neon-decorate: transparent;
     --neon-border: #000;
@@ -370,7 +282,7 @@ a {
 }
 
 @media (width >= 768px) and (orientation: landscape) {
-  
+
   .header__theme-menu {
     align-self: center;
     margin-block-start: -4px;
@@ -627,56 +539,15 @@ a {
 
 @media (width < 768px) {
 
-  
   .header {
     margin-inline-start: clamp(10px, 2.6vi, 20px);
   }
 }
 
 @media (width > 1024px) {
-  
+
   .neon-decorate {
     inset-inline-start: 95%;
     inset-block-start: 1.35em;
   }
-}
-
-:root {
-  --background-color: #fff1f7;
-  --accent-color: #ffc2e6;
-  --title-accent: #ff8dcb;
-  --accent-color-shadow: #ff0070;
-  --neon-decorate: transparent;
-  --neon-border: #000;
-  --text-color: #000;
-  --decor-text-color: #000;
-  --background-image: url(images/cover-image-light.png);
-  --font-family: 'IBM Plex mono';
-  --button-text-color: #353430;
-}
-
-.page.theme_dark {
-  --decor-text-color: #000028;
-  --accent-color: #d800ff;
-  --title-accent: #ff0070;
-  --neon-decorate: #ff0070;
-  --accent-color-shadow: #ff0070;
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --background-image: url(images/cover-image-dark.png);
-  --button-text-color: #ff0070;
-  --neon-border: #ff0070;
-}
-
-.page.theme_light {
-  --neon-border: #000;
-  --decor-text-color: #000;
-  --background-color: #fff1f7;
-  --accent-color: #ffc2e6;
-  --title-accent: #ff8dcb;
-  --accent-color-shadow: #ff0070;
-  --neon-decorate: transparent;
-  --text-color: #000;
-  --background-image: url(images/cover-image-light.png);
-  --button-text-color: #353430;
 }

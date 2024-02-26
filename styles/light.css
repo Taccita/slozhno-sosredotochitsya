@@ -1,0 +1,18 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --decor-text-color: #000;
+  --background-color: #fff1f7;
+  --accent-color: #ffc2e6;
+  --title-accent: #ff8dcb;
+  --accent-color-shadow: #ff0070;
+  --text-color: #000;
+  --background-image: url(../images/cover-image-light.png);
+  --button-text-color: #353430;
+  --neon-decorate: transparent;
+  --neon-border: #000;
+}
