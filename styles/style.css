@@ -14,7 +14,11 @@
   line-height: 1;
 }
 
-.header, footer{
+header{
+  height: 100%;
+}
+
+footer{
   height: 100%;
 }
 
