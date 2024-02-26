@@ -137,6 +137,7 @@
 }
 
 .article__text {
+  font-weight: 400;
   line-height: 23.4px;
 }
 
