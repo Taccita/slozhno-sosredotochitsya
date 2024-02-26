@@ -15,7 +15,7 @@
 }
 
 .header, footer{
-  height: 100vh;
+  height: 100%;
 }
 
 .neon-decorate {
