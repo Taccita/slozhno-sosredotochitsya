@@ -1,12 +1,10 @@
 :root {
 
-  
+  --neon-decorate: transparent;
   --background-color: #fff1f7;
   --accent-color: #ffc2e6;
   --title-accent: #ff8dcb;
-
-  --accent-color-shadow: #ff0070; 
-  --neon-decorate: transparent;
+  --accent-color-shadow: #ff0070;
   --neon-border: #000;
   --text-color: #000;
   --decor-text-color: #000;
