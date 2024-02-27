@@ -366,11 +366,11 @@ color: var(--button-text-color);
 
   .decorated-zone::before {
     inset-block-start: 20px;
-    inset-inline-start: calc(100vw - 2.4em);
+    inset-inline-start: calc(100vw - 4.5vi);
   }
   
   .decorated-zone::after {
-    inset-block-start: calc(100vh - 2.4em);
+    inset-block-start: calc(100vh - 4.5vi);
     inset-inline-start: 20px;
    
   }
@@ -500,11 +500,11 @@ color: var(--button-text-color);
 
   .decorated-zone::before {
     inset-block-start: 20px;
-    inset-inline-start: calc(100vw - 2.4em);
+    inset-inline-start: calc(100vw - 5.7vi);
   }
   
   .decorated-zone::after {
-    inset-block-start: calc(100vh - 2.4em);
+    inset-block-start: calc(100vh - 5.6vi);
     inset-inline-start:  20px;
    
   }
@@ -534,7 +534,7 @@ color: var(--button-text-color);
 
 .decorated-zone::before {
   inset-block-start: 20px;
-  inset-inline-start: calc(100% - 2em);
+  inset-inline-start: calc(100% - 1.5em);
 }
 
 .decorated-zone::after {
